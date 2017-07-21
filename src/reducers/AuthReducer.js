@@ -1,15 +1,16 @@
 /**
  * Created by rajanmaharjan on 7/20/17.
  */
-import {EMAIL_CHANGED} from '../actions/types';
+import {EMAIL_CHANGED, PASSWORD_CHANGED} from '../actions/types';
 
-const INITIAL_STATE = {email: ''};
+const INITIAL_STATE = {email: '', password: ''};
 
 export default (state = INITIAL_STATE, action) => {
     switch (action.type) {
         case  EMAIL_CHANGED:
-            console.log('email changed action');
-            return null;
+            return {...state, email: action.payload};
+        case  PASSWORD_CHANGED:
+            return {...state, password: action.payload};
         default:
             return state;
     }

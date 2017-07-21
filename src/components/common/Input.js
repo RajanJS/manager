@@ -2,7 +2,7 @@
  * Created by rajanmaharjan on 7/20/17.
  */
 
-import  React, {Component} from 'react';
+import  React from 'react';
 import {
     Text,
     TextInput,
@@ -15,7 +15,7 @@ import stylesImport from '../../styles/styles';
 
 const styles = StyleSheet.create(stylesImport());
 
-const Input = ({label, value, onChangeText, placeholder, autoCorrect}) => {
+const Input = ({label, value, onChangeText, placeholder, autoCorrect, secureTextEntry}) => {
 
     const {inputStyle, labelStyle, containerStyle} = styles;
 
@@ -24,13 +24,14 @@ const Input = ({label, value, onChangeText, placeholder, autoCorrect}) => {
             <Text style={labelStyle}>
                 {label}
             </Text>
-            <TextInput>
+            <TextInput
+                secureTextEntry={secureTextEntry}
                 placeholder={placeholder}
                 autoCorrect={autoCorrect}
-                style= {inputStyle}
+                style={inputStyle}
                 value={value}
                 onChangeText={onChangeText}
-            </TextInput>
+            />
         </View>
     );
 };
