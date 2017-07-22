@@ -3,6 +3,7 @@ import cssV from './variables/cssV';
 import header from './components/header';
 import card from './components/card';
 import textInput from './components/textInput';
+import spinner from './components/spinner';
 
 /**
  * Returns app styles
@@ -12,6 +13,11 @@ const styles = () => {
     const mainStyles = {
         mainContainerStyle: {
             flex: 1
+        },
+        errorTextStyle: {
+            fontSize: 20,
+            alignSelf: 'center',
+            color: 'red'
         }
     };
 
@@ -20,6 +26,7 @@ const styles = () => {
         header(),
         card(),
         textInput(),
+        spinner(),
         mainStyles
     );
 
