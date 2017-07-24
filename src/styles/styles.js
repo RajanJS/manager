@@ -18,6 +18,10 @@ const styles = () => {
             fontSize: 20,
             alignSelf: 'center',
             color: 'red'
+        },
+        pickerTextStyle:{
+            fontSize:18,
+            paddingLeft:20
         }
     };
 

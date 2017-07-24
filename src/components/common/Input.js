@@ -15,7 +15,7 @@ import stylesImport from '../../styles/styles';
 
 const styles = StyleSheet.create(stylesImport());
 
-const Input = ({label, value, onChangeText, placeholder, autoCorrect, secureTextEntry}) => {
+const Input = ({label, value, onChangeText, placeholder, autoCorrect, secureTextEntry, autoCapitalize}) => {
 
     const {inputStyle, labelStyle, containerStyle} = styles;
 
@@ -31,6 +31,8 @@ const Input = ({label, value, onChangeText, placeholder, autoCorrect, secureText
                 style={inputStyle}
                 value={value}
                 onChangeText={onChangeText}
+                underlineColorAndroid="transparent"
+                autoCapitalize={autoCapitalize}
             />
         </View>
     );

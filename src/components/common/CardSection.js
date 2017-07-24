@@ -14,7 +14,7 @@ const styles = StyleSheet.create(stylesImport());
 
 const CardSection = (props) => {
     return (
-        <View style={styles.cardSectionContainer}>
+        <View style={[styles.cardSectionContainer,props.style]}>
             {props.children}
         </View>
     );

@@ -15,6 +15,8 @@ export default function () {
             color: cssV('lightBlack'),
             paddingRight: 5,
             paddingLeft: 5,
+            paddingBottom: 0,
+            paddingTop:0,
             fontSize: 18,
             lineHeight: 23,
             flex: 2
@@ -28,7 +30,7 @@ export default function () {
             height: 40,
             flex: 1,
             flexDirection: 'row',
-            alignItems:'center'
+            alignItems: 'center'
         }
     };
 }
