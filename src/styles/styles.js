@@ -4,6 +4,8 @@ import header from './components/header';
 import card from './components/card';
 import textInput from './components/textInput';
 import spinner from './components/spinner';
+import listItem from './components/listItem';
+import modal from './components/modal';
 
 /**
  * Returns app styles
@@ -31,6 +33,8 @@ const styles = () => {
         card(),
         textInput(),
         spinner(),
+        listItem(),
+        modal(),
         mainStyles
     );
 
